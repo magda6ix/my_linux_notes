@@ -69,7 +69,7 @@ or
 mkdir path/to/dir1/dir2/your_new_dir
 ```
 >NOTE: 
-> the second case will not work if one of the interminient directories doesn't exist (for example "dir1" or "dir2"). In that case, all you need to do is to add the *-p* argument to your command.:
+> the second case will not work if one of the interminient directories doesn't exist (for example `dir1` or `dir2`). In that case, all you need to do is to add the `-p` argument to your command.:
 >```bash
 >mkdir -p path/to/dir1/dir2/your_new_dir
 >```
@@ -88,7 +88,7 @@ cp src.txt dest.txt
 Copy a directory recursively (with all its contents):
 
 ```bash
-cp -r src_dir/ dest_dir/
+cp -r src_dir/ dest_dir
 ```
 
 Move (or rename) file:
@@ -100,7 +100,7 @@ mv old.txt new.txt
 Move file to another directory:
 
 ```bash
-mv file.txt /path/to/dir/
+mv file.txt /path/to/dir
 ```
 
 >NOTE: 
@@ -115,7 +115,7 @@ rm file.txt
 ```
 
 >NOTE: 
-> If you want to forcefully remove a file, just add *-f*:
+> If you want to forcefully remove a file, just add `-f`:
 >```bash
 >rm -f file.txt
 >```
@@ -123,7 +123,7 @@ rm file.txt
 
 Remove a directory recursively:
 ```bash
-rm -r directory/
+rm -r directory
 ```
 
 #
@@ -225,5 +225,122 @@ or (older):
 ```bash
 ifconfig
 ```
+
+#
+
+**Test the connectivity**
+
+Test network connectivity to specific domain:
+
+```bash
+ping webpage.com
+```
+
+or IP address:
+
+```bash
+ping <ip_addr>
+```
+#
+
+**Download files**
+
+Download files using wget:
+
+```bash
+wget http://webpage.com/file.zip
+```
+Using curl:
+
+```bash
+curl -O http://webpage.com/file.zip
+```
+
+Few differences between `curl` and `wget` are described in the table below:
+
+| Feature | `curl` | `wget` |
+|--- |--- |--- |
+| Purpose | data transfer, APIs and protocols | files download |
+| Supported Protocols | HTTP, HTTPS, FTP, SMTP and more. | HTTP, HTTPS, FTP |
+| Used in Scripting | Commonly used | Rarely used |
+| Output | stdout by default | saves downloaded file to disk by default |
+
+
+#
+
+## Compression
+
+**Tar archive**
+
+Create a tar archive:
+
+```bash
+tar -cvf archive.tar directory
+```
+
+Extract a tar archive:
+```bash
+tar -xvf archive.tar
+```
+
+#
+
+**Gzip**
+
+Compress file:
+
+```bash
+gzip filename.txt
+```
+
+Decompress file:
+```bash
+gunzip file.txt.gz
+```
+#
+
+**Zip**
+
+Create zip archive: 
+```bash
+zip archive.zip file1 file2
+```
+Extract zip file:
+
+```bash
+zip archive.zip file1 file2
+```
+
+#
+
+## Text files processing
+
+**Basic operations on `.txt` files**
+
+Search for a phrase in file:
+
+```bash
+grep "phrase" file.txt
+```
+
+Display first few lines of a file:
+
+```bash
+head filename.txt
+```
+
+>The `head` command, by default, displays the first 10 lines of a file, but it can be customized by specifying the number of lines using the `-n` option. 
+>For example: 
+>```bash
+>head -n 16 filename.txt
+>``` 
+>will display the first 16 lines.
+
+Display last few lines of a file:
+
+```bash
+tail filename.txt
+```
+>The `tail` command, by default, displays the last 10 lines of a file. Similar to `head`, it can be customized by specifying the number of lines using the `-n` option
 
 
