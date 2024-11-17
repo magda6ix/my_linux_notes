@@ -315,7 +315,7 @@ zip archive.zip file1 file2
 Extract zip file:
 
 ```bash
-zip archive.zip file1 file2
+unzip archive.zip file1 file2
 ```
 
 #
