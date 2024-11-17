@@ -2,7 +2,18 @@
 
 Commonly used Linux commands presented in a nutshell.
 
-## Files and directories basic operations
+# Table of Contents
+
+1. [Files and Directories Basic Operations](#files-and-directories-basic-operations)
+2. [Managing Processes](#managing-processes)
+3. [System Monitoring](#system-monitoring)
+4. [Basic Commands for Networking](#basic-commands-for-networking)
+5. [Compression](#compression)
+6. [File Permissions](#file-permissions)
+7. [Text Files Processing](#text-files-processing)
+
+
+## Files and Directories Basic Operations
 
 **Commands to list files and directories**
 
@@ -128,9 +139,9 @@ rm -r directory
 
 #
 
-## Managing processes
+## Managing Processes
 
-**View running processes**
+**Basic process management operations**
 
 Viev all running processes:
 
@@ -149,10 +160,6 @@ Find process by name:
 ```bash
 pgrep process_name
 ```
-
-#
-
-**Kill processes**
 
 
 Kill a process by Process ID:
@@ -313,7 +320,37 @@ zip archive.zip file1 file2
 
 #
 
-## Text files processing
+## File Permissions
+
+**Basic commands for managing file permissions**
+
+View file permissions:
+
+```bash
+ls -l filename.txt
+```
+
+Change file permissions:
+
+```bash
+chmod 755 filename.txt
+```
+or (add execute permissions, using `+x`):
+
+```bash
+chmod +x file.sh
+```
+File permissions can be set using numeric values or letters. Both methods control read (r), write (w), and execute (x) permissions for the owner, group, and others.
+
+Change file owner:
+
+```bash
+chown user:group file.txt
+```
+
+#
+
+## Text Files Processing
 
 **Basic operations on `.txt` files**
 
