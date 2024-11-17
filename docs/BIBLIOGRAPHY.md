@@ -8,3 +8,6 @@ Comprehensive Linux documentation. URL: https://linux.die.net
 
 3. **Ubuntu Documentation**     
 Official documentation of Ubuntu Linux. URL: https://help.ubuntu.com
+
+4. **Vim Documentation**    
+Official documentation of Vim text editor. URL: https://www.vim.org/docs.php
