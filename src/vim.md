@@ -42,7 +42,7 @@ For running commands, e.g. save, search, exit. You can enter it by pressing `:` 
 
 
 Deletion:
-- press `d` to delete a single letter 
+- press `x` to delete a single letter 
 - press `dw` to delete a word
 - press `dd` to delete an entire line 
 
