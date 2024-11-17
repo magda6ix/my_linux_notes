@@ -6,5 +6,6 @@ This repository contains a list of useful Linux commands.
 
 1. [A brief history of Linux](src/history.md)
 2. [Basic Linux commands](src/basic_commands.md)
+3. [Vim - Short Guide](src/vim.md)
 
 All references are available in the [Bibliography](docs/BIBLIOGRAPHY.md).
